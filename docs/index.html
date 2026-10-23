@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcade Break</title>
+  <meta name="description" content="Snake, Breakout and Sky Bird in one Chrome popup. Free, no ads, no tracking.">
+  <style>
+    :root { --bg:#0f1419; --card:#161d24; --line:#1f2a33; --text:#e6edf3; --muted:#9aa4ae; --green:#3ddc84; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.5; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+    h1 { font-size: 44px; letter-spacing: 3px; color: var(--green); }
+    .tag { margin-top: 10px; font-size: 18px; color: var(--muted); }
+    .cta { display: inline-block; margin-top: 28px; padding: 14px 26px; font-weight: 700; font-size: 16px; color: #0b0f13; background: var(--green); border-radius: 10px; text-decoration: none; }
+    .cta:hover { filter: brightness(1.08); }
+    .sub { margin-top: 10px; font-size: 13px; color: var(--muted); }
+    h2 { margin: 48px 0 16px; font-size: 20px; }
+    .games { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+    .card b { color: var(--green); }
+    .card p { margin-top: 6px; font-size: 14px; color: var(--muted); }
+    ol { padding-left: 22px; }
+    li { margin: 8px 0; }
+    code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 13px; }
+    a { color: var(--green); }
+    footer { margin-top: 56px; font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>ARCADE BREAK</h1>
+    <p class="tag">Snake, Breakout and Sky Bird in one Chrome popup. Free, no ads, no tracking.</p>
+    <a class="cta" href="https://github.com/theanamsaqib/arcade-break/releases/latest/download/arcade-break-extension.zip">Download (free)</a>
+    <p class="sub">Works in Chrome, Edge, Brave and Opera &middot; open source</p>
+
+    <h2>Three games</h2>
+    <div class="games">
+      <div class="card"><b>Snake</b><p>Classic. Arrow keys or WASD. Optional wrap-around walls.</p></div>
+      <div class="card"><b>Breakout</b><p>Smash the bricks. Keys or mouse. Gets faster every level.</p></div>
+      <div class="card"><b>Sky Bird</b><p>Tap to flap through the pipes. How far can you get?</p></div>
+    </div>
+
+    <h2>Install in 1 minute</h2>
+    <ol>
+      <li>Download the zip above and <b>unzip</b> it.</li>
+      <li>Open <code>chrome://extensions</code> and turn on <b>Developer mode</b>.</li>
+      <li>Click <b>Load unpacked</b> and choose the unzipped folder.</li>
+      <li>Pin it with the puzzle-piece icon. Click to play, or press <code>Ctrl+Shift+Y</code>.</li>
+    </ol>
+
+    <h2>Privacy</h2>
+    <p>Arcade Break asks for no permissions and makes no network requests. Best scores stay in your own browser.</p>
+
+    <footer>
+      <a href="https://github.com/theanamsaqib/arcade-break">Source on GitHub</a> &middot; MIT license
+    </footer>
+  </div>
+</body>
+</html>
