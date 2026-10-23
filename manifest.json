@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Arcade Break",
+  "version": "1.3.0",
+  "description": "Snake, Breakout and Sky Bird in one popup. Free for everyone. Click the icon to play.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Play a game",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Open the arcade"
+    }
+  }
+}

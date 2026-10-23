@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arcade Break</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <nav class="tabs">
+      <button class="tab" data-game="snake">1 &middot; Snake</button>
+      <button class="tab" data-game="breakout">2 &middot; Breakout</button>
+      <button class="tab" data-game="bird">3 &middot; Sky Bird</button>
+    </nav>
+
+    <header>
+      <div class="stat"><span class="label">SCORE</span><span id="score">0</span></div>
+      <div class="title" id="gameTitle">SNAKE</div>
+      <div class="stat right"><span class="label">BEST</span><span id="best">0</span></div>
+    </header>
+
+    <div class="board" id="board">
+      <canvas id="game" width="360" height="360"></canvas>
+      <div id="overlay" class="overlay hidden">
+        <div id="overlayTitle">Ready?</div>
+        <div id="overlaySub"></div>
+      </div>
+    </div>
+
+    <footer>
+      <label class="toggle hidden" id="wrapLabel">
+        <input type="checkbox" id="wrap">
+        <span>Wrap walls</span>
+      </label>
+      <span class="hint" id="hint"></span>
+    </footer>
+  </div>
+
+  <script src="arcade.js"></script>
+  <script src="snake.js"></script>
+  <script src="breakout.js"></script>
+  <script src="bird.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
